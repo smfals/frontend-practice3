@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>书影音推荐</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: system-ui, sans-serif;
+            background-color: #f7f9fc;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 16px;
+        }
+        /*导航栏 Flex*/
+        nav {
+            background:#2c3e50;
+            color:white;
+            padding:16px 0;
+        }
+        .nav-wrap {
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+        .nav-title {
+            font-size:20px;
+            font-weight:bold;
+        }
+        .nav-links {
+            display:flex;
+            gap:24px;
+        }
+        .nav-links a {
+            color:#fff;
+            text-decoration:none;
+        }
+
+        h1 {
+            margin:32px 0 24px;
+            text-align:center;
+            color:#222;
+        }
+        /*卡片网格布局 Grid*/
+        .card-list {
+            display:grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+            gap:24px;
+            margin-bottom:40px;
+        }
+        .card-item {
+            background:#fff;
+            border-radius:10px;
+            overflow:hidden;
+            box-shadow:0 2px 8px #00000015;
+        }
+        .card-img {
+            height:180px;
+            background:#cbd5e1;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            color:#475569;
+        }
+        .card-body {
+            padding:16px;
+        }
+        .card-body h3 {
+            margin-bottom:8px;
+        }
+        .card-body p {
+            color:#555;
+            font-size:14px;
+        }
+        footer {
+            text-align:center;
+            padding:24px;
+            color:#666;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container nav-wrap">
+            <div class="nav-title">书影音推荐</div>
+            <div class="nav-links">
+                <a href=" ">书籍</a >
+                <a href="#movie">电影</a >
+                <a href="#music">音乐</a >
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>好书·好电影·好音乐</h1>
+
+        <section id="book">
+            <h2>📖书籍推荐</h2>
+            <div class="card-list">
+                <div class="card-item">
+                    <div class="card-img">书籍封面</div>
+                    <div class="card-body">
+                        <h3>平凡的世界</h3>
+                        <p>路遥经典著作，讲述普通人在时代浪潮下的奋斗与生活。</p >
+                    </div>
+                </div>
+                <div class="card-item">
+                    <div class="card-img">书籍封面</div>
+                    <div class="card-body">
+                        <h3>人类简史</h3>
+                        <p>从认知革命到科学革命，重新审视人类发展历史。</p >
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="movie">
+            <h2>🎬电影推荐</h2>
+            <div class="card-list">
+                <div class="card-item">
+                    <div class="card-img">电影海报</div>
+                    <div class="card-body">
+                        <h3>流浪地球</h3>
+                        <p>国产硬核科幻，人类带着地球奔赴宇宙。</p >
+                    </div>
+                </div>
+                <div class="card-item">
+                    <div class="card-img">电影海报</div>
+                    <div class="card-body">
+                        <h3>山海情</h3>
+                        <p>真实改编，展现扶贫路上普通人的故事。</p >
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="music">
+            <h2>🎵音乐推荐</h2>
+            <div class="card-list">
+                <div class="card-item">
+                    <div class="card-img">专辑封面</div>
+                    <div class="card-body">
+                        <h3>稻香</h3>
+                        <p>温暖治愈，怀念乡土与简单的快乐。</p >
+                    </div>
+                </div>
+                <div class="card-item">
+                    <div class="card-img">专辑封面</div>
+                    <div class="card-body">
+                        <h3>孤勇者</h3>
+                        <p>致敬平凡勇敢的普通人。</p >
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>书影音推荐专题页 &copy;2026</p >
+    </footer>
+</body>
+</html>
